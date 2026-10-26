@@ -4,13 +4,13 @@ A tree-walking interpreter for **SimpleLang**, a small functional-style language
 
 ## The language
 
-A SimpleLang program is a list of function declarations, and execution starts at `main`. Functions take at most one typed parameter in the grammar and return the value of their last expression.
+A SimpleLang program is a list of function declarations, and execution starts at `main`. Each function returns the value of its last expression.
 
 ```
 int main(int n) {
   print n;
   space;
-  if (n <= 1) then { 1 } else { (n * double(n)) }
+  if (n <= 1) then { 1 } else { (n * 2) }
 }
 ```
 
